@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Hoisting examples - hoisting as an anti-pattern</title>
     <script>
-      /*   if (true) {  // non-lexical scopes
+      /*   if (true) {  // non-lexical scopes (examples are conditional statements & loops)
         var y = 200; // hoisted !
       }
       console.log(y); // 200 */
 
-      /*  function abc() {   // lexical scopes
+      /*  function abc() {   // lexical scopes (examples are functions & objects)
         var place = "india"; // not hoisted !
       }
       abc();
@@ -18,7 +18,7 @@
       console.log(place); // 'undefined' */
 
       function a() {
-        //function declaration hoisting ! 'hoisitng is anti-pattern - avoid this style'
+        //function declaration hoisting ! 'hoisting is anti-pattern - avoid this style'
         console.log("function a executed");
       }
 
