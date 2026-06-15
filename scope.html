@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      /*   if (true) {  // non-lexical scopes
+        var y = 200; // hoisted !
+      }
+      console.log(y); // 200 */
+
+      /*  function abc() {   // lexical scopes
+        var place = "india"; // not hoisted !
+      }
+      abc();
+
+      console.log(place); // 'undefined' */
+
+      function a() {
+        //function declaration hoisting ! 'hoisitng is anti-pattern - avoid this style'
+        console.log("function a executed");
+      }
+
+      a();
+
+      x = function () {
+        // function expression -- 'identifier referencing a function'
+        console.log("x executed");
+      };
+
+      x();
+    </script>
+  </head>
+  <body></body>
+</html>
