@@ -8,11 +8,11 @@
       var color = "blue";
 
       function changeColor() {
-         console.log(x); // SC [changeColor(),window] - 2 scopes 
+        console.log(x); // SC [changeColor(),window] - 2 scopes
         var anotherColor = "red";
 
         function swapColors() {
-            console.log(x); // SC [swapColors(),changeColor(),window] -3 scopes 
+          console.log(x); // SC [swapColors(),changeColor(),window] -3 scopes
           var tempColor = anotherColor;
           anotherColor = color;
           color = tempColor;
@@ -21,10 +21,9 @@
       }
       changeColor();
 
-      console.log("value of color is " + color); 
-      console.log(x); //SC [window] - 1 scope 
+      console.log("value of color is " + color);
+      console.log(x); //SC [window] - 1 scope
     </script>
   </head>
   <body></body>
 </html>
-
